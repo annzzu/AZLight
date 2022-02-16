@@ -32,9 +32,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun changeColor(turn: Boolean) = with(binding) {
         if (turn) {
-            root.setBackgroundColor(ContextCompat.getColor(applicationContext, R.color.grey_l))
-        } else {
             root.setBackgroundColor(ContextCompat.getColor(applicationContext, R.color.yellow_l))
+        } else {
+            root.setBackgroundColor(ContextCompat.getColor(applicationContext, R.color.grey_d))
         }
     }
 
