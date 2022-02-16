@@ -3,6 +3,7 @@ package az.movie.az_light
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
+import androidx.core.content.ContextCompat
 import az.movie.az_light.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 import androidx.lifecycle.lifecycleScope
@@ -31,13 +32,13 @@ class MainActivity : AppCompatActivity() {
 
     private fun changeColor(turn: Boolean) = with(binding) {
         if (turn) {
-            root.setBackgroundColor(resources.getColor(R.color.grey_l))
+            root.setBackgroundColor(ContextCompat.getColor(applicationContext, R.color.grey_l))
         } else {
-            root.setBackgroundColor(resources.getColor(R.color.yellow_l))
+            root.setBackgroundColor(ContextCompat.getColor(applicationContext, R.color.yellow_l))
         }
     }
 
-    private fun turn(turn: Boolean) = with(binding) {
+    private fun turn(turn: Boolean) {
         lifecycleScope.launch {
             changeColor(turn)
             viewModel.turn(turn)
