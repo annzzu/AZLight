@@ -1,4 +1,4 @@
-package az.movie.az_light
+package az.movie.az_light.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,7 +8,7 @@ import az.movie.az_light.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
-import androidx.fragment.app.viewModels
+import az.movie.az_light.R
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {

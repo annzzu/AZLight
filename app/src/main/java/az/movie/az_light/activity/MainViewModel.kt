@@ -1,4 +1,4 @@
-package az.movie.az_light
+package az.movie.az_light.activity
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
