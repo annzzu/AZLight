@@ -14,7 +14,7 @@
         android:theme="@style/Theme.AZLight"
         android:usesCleartextTraffic="true">
         <receiver
-            android:name=".LightWidget"
+            android:name=".widget.LightWidget"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
